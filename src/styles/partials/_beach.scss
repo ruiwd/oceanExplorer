@@ -1,0 +1,8 @@
+@import './variables';
+@import './mixins';
+
+.beach {
+    h2 {
+        font-family: $fontB;
+    }
+}

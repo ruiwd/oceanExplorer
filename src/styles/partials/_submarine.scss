@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixins';
+
+.submarine {
+    transform:translate(10%, -50%);
+    transition: all ease-out .5s;
+    position: absolute;
+    background-image: url(../assets/kindpng_1882049.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7vw;
+    height: 7vw;
+
+    &.faceRight{
+        transform: rotateY(180deg) translate(110%, -50%);
+    }
+}
