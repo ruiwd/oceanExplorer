@@ -1,0 +1,68 @@
+.bottle {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 10%;
+    transform: rotateZ(-90deg);
+    filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5));
+    transition: all 1s ease;
+    
+    img {
+        width: 100%;
+    }
+
+    &:hover {
+        // filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 2rem white);
+        animation: pulse 2.5s linear infinite;
+        cursor: pointer;
+    }
+
+    &.zoomed {
+        width: 20vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%) rotateZ(15deg);
+        filter: none;
+
+        img {
+            animation: shake 2.5s linear infinite;
+        }
+        
+        &:hover {
+            animation: pulse2 2.5s linear infinite;
+        }
+
+        @keyframes pulse {
+            50% {
+                filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white)
+            }
+        }
+
+        @keyframes pulse2 {
+            50% {
+                filter: drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white)
+            }
+        }
+
+        @keyframes shake {
+            70% {
+                transform: rotateZ(0deg)
+            }
+            75% {
+                transform: rotateZ(-15deg);
+            }
+            80% {
+                transform: rotateZ(15deg);
+            }
+            85% {
+                transform: rotateZ(-5deg);
+            }
+            90% {
+                transform: rotateZ(5deg);
+            }
+            95% {
+                transform: rotateZ(0deg);
+            }
+        }
+    }
+}

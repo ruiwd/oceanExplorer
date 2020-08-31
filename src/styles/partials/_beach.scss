@@ -2,7 +2,36 @@
 @import './mixins';
 
 .beach {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/beach.jpg);
+    background-position: bottom;
+    background-size: cover;
+    // background-color: #87CEFA;
+
     h2 {
+        font-size: 5rem;
+        text-align: center;
         font-family: $fontB;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        z-index: 10;
+    }
+
+    // .sand {
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: -25%;
+    //     height: 60vh;
+    //     width: 70vw;
+    //     background-color: #F6E3D4;
+    //     border-top-left-radius: 50%;
+    //     border-top-right-radius: 50%;
+    // }
+
+    &.exploring {
+        display: none;
     }
 }

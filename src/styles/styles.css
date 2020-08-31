@@ -254,21 +254,271 @@ body {
   overflow-x: hidden;
 }
 
+.beach {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/beach.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
 .beach h2 {
+  font-size: 5rem;
+  text-align: center;
   font-family: "Cinzel Decorative", cursive;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  z-index: 10;
+}
+
+.beach.exploring {
+  display: none;
+}
+
+.bottle {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 10%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5));
+          filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5));
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.bottle img {
+  width: 100%;
+}
+
+.bottle:hover {
+  -webkit-animation: pulse 2.5s linear infinite;
+          animation: pulse 2.5s linear infinite;
+  cursor: pointer;
+}
+
+.bottle.zoomed {
+  width: 20vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%) rotateZ(15deg);
+          transform: translate(-50%, -60%) rotateZ(15deg);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.bottle.zoomed img {
+  -webkit-animation: shake 2.5s linear infinite;
+          animation: shake 2.5s linear infinite;
+}
+
+.bottle.zoomed:hover {
+  -webkit-animation: pulse2 2.5s linear infinite;
+          animation: pulse2 2.5s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    -webkit-filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+            filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    -webkit-filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+            filter: drop-shadow(-3rem -2rem 1rem rgba(105, 105, 105, 0.5)) drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+  }
+}
+
+@-webkit-keyframes pulse2 {
+  50% {
+    -webkit-filter: drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+            filter: drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+  }
+}
+
+@keyframes pulse2 {
+  50% {
+    -webkit-filter: drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+            filter: drop-shadow(0rem 0rem 1rem white) drop-shadow(0rem 0rem 3rem white);
+  }
+}
+
+@-webkit-keyframes shake {
+  70% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-15deg);
+            transform: rotateZ(-15deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(15deg);
+            transform: rotateZ(15deg);
+  }
+  85% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  95% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes shake {
+  70% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-15deg);
+            transform: rotateZ(-15deg);
+  }
+  80% {
+    -webkit-transform: rotateZ(15deg);
+            transform: rotateZ(15deg);
+  }
+  85% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  95% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+.note {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+  font-family: "Shadows Into Light", cursive;
+  background-image: url(../assets/paper.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 20;
+  top: -1000%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.note.show {
+  top: 0;
+}
+
+.note .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+.note .text h2 {
+  font-size: 7rem;
+}
+
+.note .text h3 {
+  font-size: 5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.note .text h3.yes:hover {
+  color: green;
+}
+
+.note .text h3.no:hover {
+  color: red;
+}
+
+.note .text .options {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 div.oceanBG {
   width: 100%;
   height: 10000px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#87CEFA), color-stop(#6495ED), color-stop(#4169E1), color-stop(#191970), to(#000));
-  background-image: linear-gradient(#87CEFA, #6495ED, #4169E1, #191970, #000);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00FFFF), color-stop(#00CED1), color-stop(#191970), to(#000));
+  background-image: linear-gradient(#00FFFF, #00CED1, #191970, #000);
+  display: none;
+}
+
+div.oceanBG .buttons {
+  position: fixed;
+  z-index: 50;
+  top: 5%;
+  right: 5%;
+}
+
+div.oceanBG .buttons .button {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  border: black 3px solid;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+div.oceanBG .buttons .button:hover {
+  -webkit-text-decoration: line-through .3rem;
+          text-decoration: line-through .3rem;
+  cursor: pointer;
+}
+
+div.oceanBG .buttons .button.strikethrough {
+  -webkit-text-decoration: line-through .3rem;
+          text-decoration: line-through .3rem;
+}
+
+div.oceanBG .buttons .button.strikethrough:hover {
+  text-decoration: none;
 }
 
 .bubbles {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  display: none;
+}
+
+.bubbles.show {
+  display: block;
 }
 
 .bubbles span {
@@ -327,21 +577,26 @@ div.oceanBG {
   }
 }
 
-.submarine {
+.cursor {
   -webkit-transform: translate(10%, -50%);
           transform: translate(10%, -50%);
   -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
   position: absolute;
-  background-image: url(../assets/kindpng_1882049.png);
+  background-image: url(../assets/cursor.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 7vw;
-  height: 7vw;
+  width: 10vw;
+  height: 10vw;
+  display: none;
 }
 
-.submarine.faceRight {
+.cursor.show {
+  display: block;
+}
+
+.cursor.faceRight {
   -webkit-transform: rotateY(180deg) translate(110%, -50%);
           transform: rotateY(180deg) translate(110%, -50%);
 }
