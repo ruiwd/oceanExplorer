@@ -13,6 +13,7 @@ div.oceanBG {
         right: 5%;
 
         .button {
+            transition: all 0.1s ease;
             font-family: $fontA;
             font-size: 2.5rem;
             text-align: center;
@@ -20,17 +21,41 @@ div.oceanBG {
             border-radius: .5rem;
             margin: 1rem;
             padding: .5rem;
+            background-color: rgba(255, 255, 255, 0.3);
 
-            &:hover {
-                text-decoration: line-through .3rem;
-                cursor: pointer;
+            &::before {
+                transition: all 0.1s ease;
+                content: '';
+                margin-top: 1.3rem;
+                position: absolute;
+                z-index: 60;
+                width: 84%;
+                left: 8%;
+                height: 0.3rem;
+                background-color: #000000;
+                transform: rotateZ(-25deg);
+                opacity: 0;
             }
 
-            &.strikethrough {
-                text-decoration: line-through .3rem;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.7);
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+            &.hide {
+
+                &::before {
+                    opacity: 1;
+                }
 
                 &:hover {
-                    text-decoration: none;
+                    &::before {
+                        opacity: 0;
+                }
                 }
             }
         }

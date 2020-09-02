@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react';
+import Wave from './Wave';
 
 class Note extends Component {
     dive = () => {
@@ -6,7 +7,8 @@ class Note extends Component {
         document.querySelector('.beach').style.display = "none";
         document.querySelector('.note').style.display = "none";
         document.querySelector('.bubbles').classList.toggle('show');
-        document.querySelector('.cursor').classList.toggle('show')
+        document.querySelector('.cursor').classList.toggle('show');
+        // <Wave />
     }
 
     noDive = () => {

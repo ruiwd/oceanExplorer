@@ -55,12 +55,12 @@ class OceanBG extends Component {
 
         toggleCursor = () => {
             document.querySelector('.cursor').classList.toggle('show');
-            document.querySelector('.toggleCursor').classList.toggle('strikethrough');
+            document.querySelector('.toggleCursor').classList.toggle('hide');
         }
 
         toggleBubbles = () => {
             document.querySelector('.bubbles').classList.toggle('show');
-            document.querySelector('.toggleBubbles').classList.toggle('strikethrough');
+            document.querySelector('.toggleBubbles').classList.toggle('hide');
         }
 
     render() {

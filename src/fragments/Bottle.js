@@ -1,6 +1,5 @@
 import React, {Component, Fragment} from 'react';
 import bottle from '../assets/bottle.png';
-import paper from '../assets/paper.png';
 
 class Beach extends Component {
     clickBottle = () => {
