@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Cursor from './Cursor';
 import Bubbles from './Bubbles';
+import Wave from './Wave';
 
 class OceanBG extends Component {   
     constructor() {

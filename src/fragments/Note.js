@@ -1,14 +1,21 @@
 import React, {Component, Fragment} from 'react';
-import Wave from './Wave';
+import waves from '../assets/waves.png';
 
 class Note extends Component {
     dive = () => {
-        document.querySelector('.oceanBG').style.display = "block";
-        document.querySelector('.beach').style.display = "none";
-        document.querySelector('.note').style.display = "none";
-        document.querySelector('.bubbles').classList.toggle('show');
-        document.querySelector('.cursor').classList.toggle('show');
-        // <Wave />
+        document.querySelector('.waveTransition').innerHTML=`<div class='fade'></div><img src=${waves} alt="Page transition"/>`;
+
+        setTimeout(function() {
+            document.querySelector('.oceanBG').style.display = "block";
+            document.querySelector('.beach').style.display = "none";
+            document.querySelector('.note').style.display = "none";
+            document.querySelector('.bubbles').classList.toggle('show');
+            document.querySelector('.cursor').classList.toggle('show');
+        }, 2000)
+
+        setTimeout(function() {
+            document.querySelector('.waveTransition').innerHTML=``;
+        }, 3000)
     }
 
     noDive = () => {

@@ -438,15 +438,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 25%;
   text-align: center;
 }
 
 .note .text h2 {
-  font-size: 7rem;
+  font-size: 6rem;
+  opacity: .6;
 }
 
 .note .text h3 {
+  opacity: 0.6;
   font-size: 5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -462,7 +464,7 @@ body {
 }
 
 .note .text .options {
-  margin-top: 10rem;
+  margin-top: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,38 +472,70 @@ body {
       justify-content: space-around;
 }
 
-.waveTransition {
+.waveTransition .fade {
+  position: fixed;
+  z-index: 201;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #fff;
+  -webkit-animation: fade 2s linear 1;
+          animation: fade 2s linear 1;
+}
+
+.waveTransition img {
   position: fixed;
   z-index: 200;
-  bottom: 75%;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
+  bottom: 0;
+  width: 100%;
+  -webkit-animation: transition 2.5s linear 1;
+          animation: transition 2.5s linear 1;
   opacity: 0;
-  -webkit-animation: transition 2s linear 1;
-          animation: transition 2s linear 1;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 @-webkit-keyframes transition {
   0% {
     opacity: 1;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  90% {
-    -webkit-transform: scale(5);
-            transform: scale(5);
+  100% {
+    -webkit-transform: scale(15);
+            transform: scale(15);
   }
 }
 
 @keyframes transition {
   0% {
     opacity: 1;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  90% {
-    -webkit-transform: scale(5);
-            transform: scale(5);
+  100% {
+    -webkit-transform: scale(15);
+            transform: scale(15);
+  }
+}
+
+@-webkit-keyframes fade {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -515,6 +549,7 @@ div.oceanBG {
 
 div.oceanBG .buttons {
   position: fixed;
+  z-index: 300;
   z-index: 50;
   top: 5%;
   right: 5%;
