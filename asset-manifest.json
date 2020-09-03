@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/oceanExplorer/static/css/main.ad428a83.chunk.css",
+    "main.js": "/oceanExplorer/static/js/main.e2112836.chunk.js",
+    "main.js.map": "/oceanExplorer/static/js/main.e2112836.chunk.js.map",
+    "runtime-main.js": "/oceanExplorer/static/js/runtime-main.2dccc27e.js",
+    "runtime-main.js.map": "/oceanExplorer/static/js/runtime-main.2dccc27e.js.map",
+    "static/js/2.eb9ea471.chunk.js": "/oceanExplorer/static/js/2.eb9ea471.chunk.js",
+    "static/js/2.eb9ea471.chunk.js.map": "/oceanExplorer/static/js/2.eb9ea471.chunk.js.map",
+    "index.html": "/oceanExplorer/index.html",
+    "precache-manifest.0299e71afde8a44d56aae23e0494880f.js": "/oceanExplorer/precache-manifest.0299e71afde8a44d56aae23e0494880f.js",
+    "service-worker.js": "/oceanExplorer/service-worker.js",
+    "static/css/main.ad428a83.chunk.css.map": "/oceanExplorer/static/css/main.ad428a83.chunk.css.map",
+    "static/js/2.eb9ea471.chunk.js.LICENSE.txt": "/oceanExplorer/static/js/2.eb9ea471.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/oceanExplorer/static/media/paper.86f3517f.png",
+    "static/media/bottle.png": "/oceanExplorer/static/media/bottle.688a4e6a.png",
+    "static/media/waves.png": "/oceanExplorer/static/media/waves.3f5c90e8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2dccc27e.js",
+    "static/js/2.eb9ea471.chunk.js",
+    "static/css/main.ad428a83.chunk.css",
+    "static/js/main.e2112836.chunk.js"
+  ]
+}
