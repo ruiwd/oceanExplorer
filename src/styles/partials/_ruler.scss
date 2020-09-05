@@ -1,0 +1,15 @@
+@import '_variables.scss';
+
+.ruler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 1%;
+
+  p {
+    text-align: right;
+    font-family: $fontB;
+    color: dimgray;
+  }
+}

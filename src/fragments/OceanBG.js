@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
+import Ruler from './Ruler';
 import Cursor from './Cursor';
 import Bubbles from './Bubbles';
-import Wave from './Wave';
 
 class OceanBG extends Component {   
     constructor() {
@@ -67,14 +67,15 @@ class OceanBG extends Component {
     render() {
         return (
             <Fragment>
-                <Cursor cursorX={this.state.cursorX} cursorY={this.state.cursorY}/>
-                <Bubbles />
-                <div className="oceanBG">
-                    <div className="buttons">
-                        <div className="button toggleCursor" onClick={this.toggleCursor}>Cursor</div>
-                        <div className="button toggleBubbles" onClick={this.toggleBubbles}>Bubbles</div>
-                    </div>
-                </div>
+              <Cursor cursorX={this.state.cursorX} cursorY={this.state.cursorY}/>
+              <Bubbles />
+              <div className="oceanBG">
+                  <div className="buttons">
+                      <div className="button toggleCursor" onClick={this.toggleCursor}>Diver</div>
+                      <div className="button toggleBubbles" onClick={this.toggleBubbles}>Bubbles</div>
+                  </div>
+                  <Ruler />
+              </div>
             </Fragment>
         )
     }
