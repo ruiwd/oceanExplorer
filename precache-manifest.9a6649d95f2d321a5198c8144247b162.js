@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5f9c3f93b0b715ac670bb40facbe402",
+    "revision": "b14836eacc9547e7a295a63226d0c95b",
     "url": "/oceanExplorer/index.html"
   },
   {
-    "revision": "0d4ef8d06a5495108c96",
-    "url": "/oceanExplorer/static/css/main.ad428a83.chunk.css"
+    "revision": "ca479860e6bfc6c12d72",
+    "url": "/oceanExplorer/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "d21d08854ca3d39859b5",
-    "url": "/oceanExplorer/static/js/2.eb9ea471.chunk.js"
+    "revision": "f9e30df7735c6f12376a",
+    "url": "/oceanExplorer/static/css/main.9043dd07.chunk.css"
+  },
+  {
+    "revision": "ca479860e6bfc6c12d72",
+    "url": "/oceanExplorer/static/js/2.33b643ef.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/oceanExplorer/static/js/2.eb9ea471.chunk.js.LICENSE.txt"
+    "url": "/oceanExplorer/static/js/2.33b643ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d4ef8d06a5495108c96",
-    "url": "/oceanExplorer/static/js/main.e2112836.chunk.js"
+    "revision": "f9e30df7735c6f12376a",
+    "url": "/oceanExplorer/static/js/main.6c1bb425.chunk.js"
   },
   {
     "revision": "b075c284f69cfcd55a54",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "11ae42b58aedca321d74203bf3e80dfe",
     "url": "/oceanExplorer/static/media/cursor.11ae42b5.png"
+  },
+  {
+    "revision": "b2a6ccf8db0e273e433dbe0c098edc5a",
+    "url": "/oceanExplorer/static/media/floor.b2a6ccf8.jpg"
   },
   {
     "revision": "86f3517f875ad70002712c3477716148",
