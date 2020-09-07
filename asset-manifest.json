@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/oceanExplorer/static/css/main.9043dd07.chunk.css",
-    "main.js": "/oceanExplorer/static/js/main.6c1bb425.chunk.js",
-    "main.js.map": "/oceanExplorer/static/js/main.6c1bb425.chunk.js.map",
+    "main.css": "/oceanExplorer/static/css/main.f477051d.chunk.css",
+    "main.js": "/oceanExplorer/static/js/main.cd17b8fb.chunk.js",
+    "main.js.map": "/oceanExplorer/static/js/main.cd17b8fb.chunk.js.map",
     "runtime-main.js": "/oceanExplorer/static/js/runtime-main.2dccc27e.js",
     "runtime-main.js.map": "/oceanExplorer/static/js/runtime-main.2dccc27e.js.map",
-    "static/css/2.eb43dee1.chunk.css": "/oceanExplorer/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.33b643ef.chunk.js": "/oceanExplorer/static/js/2.33b643ef.chunk.js",
-    "static/js/2.33b643ef.chunk.js.map": "/oceanExplorer/static/js/2.33b643ef.chunk.js.map",
+    "static/js/2.1658ac1b.chunk.js": "/oceanExplorer/static/js/2.1658ac1b.chunk.js",
+    "static/js/2.1658ac1b.chunk.js.map": "/oceanExplorer/static/js/2.1658ac1b.chunk.js.map",
     "index.html": "/oceanExplorer/index.html",
-    "precache-manifest.9a6649d95f2d321a5198c8144247b162.js": "/oceanExplorer/precache-manifest.9a6649d95f2d321a5198c8144247b162.js",
+    "precache-manifest.a82f76c1adbfa85c2b416025036c5e58.js": "/oceanExplorer/precache-manifest.a82f76c1adbfa85c2b416025036c5e58.js",
     "service-worker.js": "/oceanExplorer/service-worker.js",
-    "static/css/2.eb43dee1.chunk.css.map": "/oceanExplorer/static/css/2.eb43dee1.chunk.css.map",
-    "static/css/main.9043dd07.chunk.css.map": "/oceanExplorer/static/css/main.9043dd07.chunk.css.map",
-    "static/js/2.33b643ef.chunk.js.LICENSE.txt": "/oceanExplorer/static/js/2.33b643ef.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/oceanExplorer/static/media/paper.86f3517f.png",
+    "static/css/main.f477051d.chunk.css.map": "/oceanExplorer/static/css/main.f477051d.chunk.css.map",
+    "static/js/2.1658ac1b.chunk.js.LICENSE.txt": "/oceanExplorer/static/js/2.1658ac1b.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/oceanExplorer/static/media/paper2.0793ad9e.png",
     "static/media/bottle.png": "/oceanExplorer/static/media/bottle.688a4e6a.png",
+    "static/media/spermWhale.png": "/oceanExplorer/static/media/spermWhale.91c5450d.png",
+    "static/media/squid.png": "/oceanExplorer/static/media/squid.af1bf4e5.png",
     "static/media/waves.png": "/oceanExplorer/static/media/waves.3f5c90e8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2dccc27e.js",
-    "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.33b643ef.chunk.js",
-    "static/css/main.9043dd07.chunk.css",
-    "static/js/main.6c1bb425.chunk.js"
+    "static/js/2.1658ac1b.chunk.js",
+    "static/css/main.f477051d.chunk.css",
+    "static/js/main.cd17b8fb.chunk.js"
   ]
 }
