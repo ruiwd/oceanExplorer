@@ -541,18 +541,29 @@ body {
 
 div.oceanBG {
   width: 100%;
-  height: 10000px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00FFFF), color-stop(#00CED1), color-stop(#191970), to(#000));
-  background-image: linear-gradient(#00FFFF, #00CED1, #191970, #000);
+  height: 11500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00FFFF), color-stop(10%, #00CED1), color-stop(40%, #191970), color-stop(60%, #000));
+  background-image: linear-gradient(#00FFFF 2%, #00CED1 10%, #191970 40%, #000 60%);
   display: none;
+}
+
+div.oceanBG .floor {
+  background-image: url(../assets/floor.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: absolute;
+  top: 11000px;
+  width: 100%;
+  overflow: hidden;
 }
 
 div.oceanBG .buttons {
   position: fixed;
   z-index: 300;
-  z-index: 50;
-  top: 5%;
-  left: 5%;
+  top: 2%;
+  left: 2%;
 }
 
 div.oceanBG .buttons .button {
@@ -602,6 +613,12 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .ruler {
+  font-family: "Cinzel Decorative", cursive;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ruler .standardLabel {
+  height: 11000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,17 +630,77 @@ div.oceanBG .buttons .button.hide:hover::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  right: 1%;
+  width: 100%;
 }
 
 .ruler p {
   text-align: right;
-  font-family: "Cinzel Decorative", cursive;
-  color: dimgray;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  display: block;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.extraLabel p.twoHundred {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  right: 0;
+}
+
+.extraLabel .zone {
+  text-align: left;
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  font-size: 10rem;
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
+}
+
+.extraLabel .zone.zoneOne {
+  top: 20px;
+}
+
+.extraLabel .zone.zoneTwo {
+  top: 220px;
+  opacity: .95;
+}
+
+.extraLabel .zone.zoneThree {
+  top: 1020px;
+  opacity: .8;
+}
+
+.extraLabel .zone.zoneFour {
+  top: 4020px;
+  opacity: .6;
+}
+
+.extraLabel .zone.zoneFive {
+  top: 6020px;
+  opacity: .45;
+}
+
+@-webkit-keyframes marquee {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .bubbles {
   position: fixed;
+  z-index: 200;
   height: 100vh;
   width: 100vw;
   display: none;
@@ -635,7 +712,6 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .bubbles span {
   position: absolute;
-  z-index: 100;
   bottom: -50px;
   background-color: transparent;
   border-radius: 50%;
@@ -695,6 +771,7 @@ div.oceanBG .buttons .button.hide:hover::before {
   -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
   position: absolute;
+  z-index: 100;
   background-image: url(../assets/cursor.png);
   background-position: center;
   background-repeat: no-repeat;

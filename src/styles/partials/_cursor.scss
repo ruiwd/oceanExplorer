@@ -5,6 +5,7 @@
     transform:translate(10%, -50%);
     transition: all ease-out .5s;
     position: absolute;
+    z-index: 100;
     background-image: url(../assets/cursor.png);
     background-position: center;
     background-repeat: no-repeat;

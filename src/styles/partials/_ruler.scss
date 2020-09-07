@@ -1,15 +1,73 @@
 @import '_variables.scss';
 
 .ruler {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  right: 1%;
+  font-family: $fontB;
+  color: rgba($color: white, $alpha: .7);
+
+  .standardLabel {
+    height: 11000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+  }
 
   p {
     text-align: right;
-    font-family: $fontB;
-    color: dimgray;
+    border-top: 2px solid rgba($color: white, $alpha: .7);
+    display: block;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.extraLabel {
+  p.twoHundred {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    right: 0;
+  }
+
+  .zone {
+    text-align: left;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    transform: translateX(100%);
+    font-size: 10rem;
+    animation: marquee 20s linear infinite;
+
+    &.zoneOne {
+      top: 20px;
+    }
+  
+    &.zoneTwo {
+      top: 220px;
+      opacity: .95;
+    }
+
+    &.zoneThree {
+      top: 1020px;
+      opacity: .8;
+    }
+
+    &.zoneFour { 
+      top: 4020px;
+      opacity: .6;
+    }
+
+    &.zoneFive {
+      top: 6020px;
+      opacity: .45;
+    }
+  }
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-100%);
+    // left: 0;
   }
 }

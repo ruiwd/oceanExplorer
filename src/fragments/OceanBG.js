@@ -70,6 +70,7 @@ class OceanBG extends Component {
               <Cursor cursorX={this.state.cursorX} cursorY={this.state.cursorY}/>
               <Bubbles />
               <div className="oceanBG">
+              <div className="floor"></div>
                   <div className="buttons">
                       <div className="button toggleCursor" onClick={this.toggleCursor}>Diver</div>
                       <div className="button toggleBubbles" onClick={this.toggleBubbles}>Bubbles</div>
