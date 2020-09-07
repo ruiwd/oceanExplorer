@@ -11,7 +11,7 @@ class Cursor extends Component {
         }
     
         moveCursor()
-      }
+    }
 
     render(){
     return(

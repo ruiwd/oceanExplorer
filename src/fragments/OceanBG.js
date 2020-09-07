@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import Ruler from './Ruler';
 import Cursor from './Cursor';
 import Bubbles from './Bubbles';
+import Creatures from './Creatures';
 
 class OceanBG extends Component {   
     constructor() {
@@ -24,10 +25,8 @@ class OceanBG extends Component {
       
         const setCursorDirection = () => {
           if (cursorOldX < this.state.cursorX) {
-            console.log('right')
             document.querySelector('.cursor').classList.add('faceRight')
           } else if (cursorOldX > this.state.cursorX) {
-            console.log('left');
             document.querySelector('.cursor').classList.remove('faceRight')
           }
       
@@ -70,12 +69,14 @@ class OceanBG extends Component {
               <Cursor cursorX={this.state.cursorX} cursorY={this.state.cursorY}/>
               <Bubbles />
               <div className="oceanBG">
-              <div className="floor"></div>
+              <div className="floor">
+              </div>
                   <div className="buttons">
                       <div className="button toggleCursor" onClick={this.toggleCursor}>Diver</div>
                       <div className="button toggleBubbles" onClick={this.toggleBubbles}>Bubbles</div>
                   </div>
                   <Ruler />
+                  <Creatures />
               </div>
             </Fragment>
         )

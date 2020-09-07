@@ -1,0 +1,145 @@
+@import '_variables.scss';
+
+.creatures {
+  position: absolute;
+  height: 11000px;
+
+  .creature {
+    position: absolute;
+    transform: translateY(-50%);
+
+    &:hover {
+      filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.7)) drop-shadow(0 0 .5rem rgba(255, 255, 255, 0.5));
+
+      &::after {
+        opacity: 1;
+      }
+    }
+    
+    &::after {
+      display: block;
+      content: '';
+      font-family: $fontA;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20rem;
+      height: 15rem;
+      background-image: url(../assets/paper2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transition: all 0.2s;
+      text-align: center;
+      font-size: 4rem;
+      padding: 3rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &.spermWhale {
+      top: 1500px;
+      width: 40vw;
+      animation: swimRight 10s linear infinite;
+
+      &::after {
+        top: -50%;
+      }
+
+      & img {
+        animation: swimFlip 10s linear infinite;
+      }
+
+      &:hover {
+        &::after {
+          content: 'Sperm Whale';
+        }
+      }
+    }
+
+    &.squid {
+      left: 70vw;
+      top: 2500px;
+      width: 30vw;
+      animation: swimLeft 5s ease infinite;
+
+      &::after {
+        top: -120%;
+      }
+  
+      & img {
+        animation: swimFlip 5s linear infinite;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Colossal Squid';
+        }
+      }
+    }
+  }
+}
+
+@keyframes swimRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  // 40% {
+  //   transform: translateX(230%);
+  // }
+
+  50% {
+    transform: translateX(60vw);
+  }
+
+  // 90% {
+  //   transform: translateX(10%);
+  // }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes swimFlip {
+  45% {
+    transform: none;
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  95% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes swimLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  // 40% {
+  //   transform: translateX(230%);
+  // }
+
+  50% {
+    transform: translateX(-60vw);
+  }
+
+  // 90% {
+  //   transform: translateX(10%);
+  // }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

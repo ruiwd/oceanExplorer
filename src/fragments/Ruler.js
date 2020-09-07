@@ -1,6 +1,4 @@
 import React, {Component, Fragment} from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 class Ruler extends Component {
   render() {

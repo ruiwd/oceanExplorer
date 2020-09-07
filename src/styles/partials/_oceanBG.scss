@@ -2,18 +2,18 @@
 
 div.oceanBG {
     width: 100%;
-    height: 11500px;
+    height: 11400px;
     background-image: linear-gradient(#00FFFF 2%, #00CED1 10%, #191970 40%, #000 60%);
     display: none;
 
     .floor {
-        background-image: url(../assets/floor.jpg);
+        background-image: url(../assets/floor.png);
         background-size: cover;
-        background-position: bottom;
+        background-position-y: 60%;
         background-repeat: no-repeat;
         height: 500px;
         position: absolute;
-        top: 11000px;
+        top: 10900px;
         width: 100%;
         overflow: hidden;
     }

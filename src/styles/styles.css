@@ -541,20 +541,20 @@ body {
 
 div.oceanBG {
   width: 100%;
-  height: 11500px;
+  height: 11400px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00FFFF), color-stop(10%, #00CED1), color-stop(40%, #191970), color-stop(60%, #000));
   background-image: linear-gradient(#00FFFF 2%, #00CED1 10%, #191970 40%, #000 60%);
   display: none;
 }
 
 div.oceanBG .floor {
-  background-image: url(../assets/floor.jpg);
+  background-image: url(../assets/floor.png);
   background-size: cover;
-  background-position: bottom;
+  background-position-y: 60%;
   background-repeat: no-repeat;
   height: 500px;
   position: absolute;
-  top: 11000px;
+  top: 10900px;
   width: 100%;
   overflow: hidden;
 }
@@ -704,6 +704,7 @@ div.oceanBG .buttons .button.hide:hover::before {
   height: 100vh;
   width: 100vw;
   display: none;
+  pointer-events: none;
 }
 
 .bubbles.show {
@@ -779,6 +780,7 @@ div.oceanBG .buttons .button.hide:hover::before {
   width: 10vw;
   height: 10vw;
   display: none;
+  pointer-events: none;
 }
 
 .cursor.show {
@@ -788,5 +790,189 @@ div.oceanBG .buttons .button.hide:hover::before {
 .cursor.faceRight {
   -webkit-transform: rotateY(180deg) translate(110%, -50%);
           transform: rotateY(180deg) translate(110%, -50%);
+}
+
+.creatures {
+  position: absolute;
+  height: 11000px;
+}
+
+.creatures .creature {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.creatures .creature:hover {
+  -webkit-filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.7)) drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.5));
+          filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.7)) drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.5));
+}
+
+.creatures .creature:hover::after {
+  opacity: 1;
+}
+
+.creatures .creature::after {
+  display: block;
+  content: '';
+  font-family: "Shadows Into Light", cursive;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20rem;
+  height: 15rem;
+  background-image: url(../assets/paper2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: center;
+  font-size: 4rem;
+  padding: 3rem;
+}
+
+.creatures .creature img {
+  width: 100%;
+}
+
+.creatures .creature.spermWhale {
+  top: 1500px;
+  width: 40vw;
+  -webkit-animation: swimRight 10s linear infinite;
+          animation: swimRight 10s linear infinite;
+}
+
+.creatures .creature.spermWhale::after {
+  top: -50%;
+}
+
+.creatures .creature.spermWhale img {
+  -webkit-animation: swimFlip 10s linear infinite;
+          animation: swimFlip 10s linear infinite;
+}
+
+.creatures .creature.spermWhale:hover::after {
+  content: 'Sperm Whale';
+}
+
+.creatures .creature.squid {
+  left: 70vw;
+  top: 2500px;
+  width: 30vw;
+  -webkit-animation: swimLeft 5s ease infinite;
+          animation: swimLeft 5s ease infinite;
+}
+
+.creatures .creature.squid::after {
+  top: -120%;
+}
+
+.creatures .creature.squid img {
+  -webkit-animation: swimFlip 5s linear infinite;
+          animation: swimFlip 5s linear infinite;
+}
+
+.creatures .creature.squid:hover::after {
+  content: 'Colossal Squid';
+}
+
+@-webkit-keyframes swimRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(60vw);
+            transform: translateX(60vw);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes swimRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(60vw);
+            transform: translateX(60vw);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes swimFlip {
+  45% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  95% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes swimFlip {
+  45% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  95% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes swimLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-60vw);
+            transform: translateX(-60vw);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes swimLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-60vw);
+            transform: translateX(-60vw);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
