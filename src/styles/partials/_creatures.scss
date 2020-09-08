@@ -140,7 +140,7 @@
       left: 10vw;
       top: 900px;
       width: 20vw;
-      animation: swimRight 5s linear infinite;
+      animation: swimRight 5s ease infinite;
 
       & img {
         animation: swimFlip 5s linear infinite;
@@ -223,7 +223,7 @@
       left: 70vw;
       top: 2300px;
       width: 4vw;
-      animation: swimRight 10s linear infinite;
+      animation: swimRight 10s ease infinite;
 
       & img {
         animation: swimFlip 10s linear infinite;

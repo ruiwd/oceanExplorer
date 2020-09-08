@@ -937,8 +937,8 @@ div.oceanBG .buttons .button.hide:hover::before {
   left: 10vw;
   top: 900px;
   width: 20vw;
-  -webkit-animation: swimRight 5s linear infinite;
-          animation: swimRight 5s linear infinite;
+  -webkit-animation: swimRight 5s ease infinite;
+          animation: swimRight 5s ease infinite;
 }
 
 .creatures .creature.tuna img {
@@ -1019,8 +1019,8 @@ div.oceanBG .buttons .button.hide:hover::before {
   left: 70vw;
   top: 2300px;
   width: 4vw;
-  -webkit-animation: swimRight 10s linear infinite;
-          animation: swimRight 10s linear infinite;
+  -webkit-animation: swimRight 10s ease infinite;
+          animation: swimRight 10s ease infinite;
 }
 
 .creatures .creature.anglerfish img {
