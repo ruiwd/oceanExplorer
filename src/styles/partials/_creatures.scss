@@ -2,7 +2,6 @@
 
 .creatures {
   max-width: 100vw;
-  overflow-x: hidden;
   position: absolute;
   height: 11000px;
 
@@ -42,12 +41,12 @@
     }
 
     &.spermWhale {
-      top: 1500px;
+      top: 1400px;
       width: 40vw;
       animation: swimRight 10s linear infinite;
 
       &::after {
-        top: -50%;
+        top: -75%;
       }
 
       & img {
@@ -63,7 +62,7 @@
 
     &.squid {
       left: 70vw;
-      top: 2100px;
+      top: 1800px;
       width: 30vw;
       animation: swimLeft 5s ease infinite;
 
@@ -124,8 +123,9 @@
     &.dolphin {
       left: 125vw;
       top: 150px;
+      transform: translateY(100%);
       width: 20vw;
-      animation: swimLeftFar 7s linear infinite;
+      animation: swimLeftFar 10s linear infinite;
 
       &::after {
         top: 70%;
@@ -149,7 +149,7 @@
       }
 
       &::after {
-        top: -60%;
+        top: -95%;
       }
   
       &:hover {
@@ -210,7 +210,7 @@
       animation: swimLeftFar 15s linear infinite;
 
       &::after {
-        top: 100%;
+        top: -270%;
         padding: 3rem;
       }
   
@@ -247,7 +247,7 @@
       left: -20vw;
       top: 2700px;
       width: 8vw;
-      animation: swimRightFar 10s linear infinite;
+      animation: swimRightFar 15s linear infinite;
 
       &::after {
         top: -300%;
@@ -257,6 +257,143 @@
       &:hover {
         &::after {
           content: 'Pelican Eel';
+        }
+      }
+    }
+
+    &.oarfish {
+      left: -50vw;
+      top: 2200px;
+      width: 30vw;
+      transform: translateY(-300%);
+      animation: swimRightFar 12s ease infinite;
+
+      &::after {
+        top: -80%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Giant Oarfish';
+        }
+      }
+    }
+
+    &.octopus {
+      left: 120vw;
+      top: 4000px;
+
+      width: 3vw;
+      animation: zigzagLeft 15s ease-out infinite;
+
+      &::after {
+        top: -300%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Dumbo Octopus';
+        }
+      }
+    }
+
+    &.dragonfish {
+      left: 120vw;
+      top: 2000px;
+      width: 5vw;
+      animation: swimLeftFar 15s ease-in infinite;
+
+      &::after {
+        top: 150%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Black Dragonfish';
+        }
+      }
+    }
+
+    &.vampire {
+      left: 20vw;
+      top: 3000px;
+      width: 5vw;
+      animation: swimRight 15s ease infinite;
+
+      & img {
+        animation: swimFlip 15s linear infinite;
+      }
+
+      &::after {
+        top: 120%;
+        padding: 3rem 0rem 3rem 0rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Vampire Squid';
+        }
+      }
+    }
+
+    &.fangtooth {
+      left: 110vw;
+      top: 5000px;
+      width: 5vw;
+      animation: swimLeftFar 15s ease-out infinite;
+
+      &::after {
+        top: -350%;
+        padding: 5rem 0rem 5rem 0rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Fangtooth';
+        }
+      }
+    }
+
+    &.swallower {
+      left: 110vw;
+      top: 2800px;
+      width: 5vw;
+      transform: translateY(-500%);
+      animation: swimLeftFar 10s ease-out infinite;
+
+      &::after {
+        top: -300%;
+        padding: 3rem 0rem 3rem 0rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Black Swallower';
+        }
+      }
+    }
+
+    &.tripod {
+      left: 80vw;
+      top: 4500px;
+      width: 7vw;
+      animation: swimLeft 7s linear infinite;
+
+      & img {
+        animation: swimFlip 7s linear infinite;
+      }
+
+      &::after {
+        top: -200%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Tripod Fish';
         }
       }
     }
@@ -311,12 +448,39 @@
 
 @keyframes swimRightFar {
   100% {
-    transform: translateX(250vw) translateY(100%);
+    transform: translateX(150vw) translateY(100%);
   }
 }
 
 @keyframes swimLeftFar {
   100% {
-    transform: translateX(-250vw) translateY(-200%);
+    transform: translateX(-150vw) translateY(-200%);
+  }
+}
+
+@keyframes zigzagLeft {
+  12% {
+    transform: translateY(-150%) translateX(-15vw);
+  }
+  24% {
+    transform: translateY(150%) translateX(-30vw);
+  }
+  36% {
+    transform: translateY(-150%) translateX(-45vw);
+  }
+  48% {
+    transform: translateY(150%) translateX(-60vw);
+  }
+  60% {
+    transform: translateY(-150%) translateX(-75vw);
+  }
+  72% {
+    transform: translateY(150%) translateX(-90vw);
+  }
+  84% {
+    transform: translateY(-150%) translateX(-105vw);
+  }
+  100% {
+    transform: translateY(150%) translateX(-130vw);
   }
 }

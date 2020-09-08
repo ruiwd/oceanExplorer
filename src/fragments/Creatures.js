@@ -10,6 +10,13 @@ import ray from '../assets/ray.png';
 import shark from '../assets/shark.png';
 import anglerfish from '../assets/anglerfish.png';
 import eel from '../assets/eel.png';
+import oarfish from '../assets/oarfish.png';
+import octopus from '../assets/octopus.png';
+import dragonfish from '../assets/dragonfish.png';
+import fangtooth from '../assets/fangtooth.png';
+import vampire from '../assets/vampire.png';
+import swallower from '../assets/swallower.png';
+import tripod from '../assets/tripod.png';
 
 class Creatures extends Component {
   render () {
@@ -47,6 +54,27 @@ class Creatures extends Component {
         </div>
         <div className="creature eel">
           <img src={eel} alt="Pelican Eel"/>
+        </div>
+        <div className="creature oarfish">
+          <img src={oarfish} alt="Giant Oarfish"/>
+        </div>
+        <div className="creature octopus">
+          <img src={octopus} alt="Dumbo Octopus"/>
+        </div>
+        <div className="creature dragonfish">
+          <img src={dragonfish} alt="Black Dragonfish"/>
+        </div>
+        <div className="creature fangtooth">
+          <img src={fangtooth} alt="Fangtooth"/>
+        </div>
+        <div className="creature vampire">
+          <img src={vampire} alt="Vampire Squid"/>
+        </div>
+        <div className="creature swallower">
+          <img src={swallower} alt="Black Swallower"/>
+        </div>
+        <div className="creature tripod">
+          <img src={tripod} alt="Tripod Fish"/>
         </div>
       </div>
     )

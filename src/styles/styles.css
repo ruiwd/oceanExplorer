@@ -544,6 +544,8 @@ body {
 }
 
 div.oceanBG {
+  max-width: 100vw;
+  overflow-x: hidden;
   width: 100%;
   height: 11400px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00FFFF), color-stop(10%, #00CED1), color-stop(40%, #191970), color-stop(60%, #000));
@@ -801,7 +803,6 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures {
   max-width: 100vw;
-  overflow-x: hidden;
   position: absolute;
   height: 11000px;
 }
@@ -847,14 +848,14 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.spermWhale {
-  top: 1500px;
+  top: 1400px;
   width: 40vw;
   -webkit-animation: swimRight 10s linear infinite;
           animation: swimRight 10s linear infinite;
 }
 
 .creatures .creature.spermWhale::after {
-  top: -50%;
+  top: -75%;
 }
 
 .creatures .creature.spermWhale img {
@@ -868,7 +869,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature.squid {
   left: 70vw;
-  top: 2100px;
+  top: 1800px;
   width: 30vw;
   -webkit-animation: swimLeft 5s ease infinite;
           animation: swimLeft 5s ease infinite;
@@ -928,9 +929,11 @@ div.oceanBG .buttons .button.hide:hover::before {
 .creatures .creature.dolphin {
   left: 125vw;
   top: 150px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   width: 20vw;
-  -webkit-animation: swimLeftFar 7s linear infinite;
-          animation: swimLeftFar 7s linear infinite;
+  -webkit-animation: swimLeftFar 10s linear infinite;
+          animation: swimLeftFar 10s linear infinite;
 }
 
 .creatures .creature.dolphin::after {
@@ -955,7 +958,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.tuna::after {
-  top: -60%;
+  top: -95%;
 }
 
 .creatures .creature.tuna:hover::after {
@@ -1015,7 +1018,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.shark::after {
-  top: 100%;
+  top: -270%;
   padding: 3rem;
 }
 
@@ -1049,8 +1052,8 @@ div.oceanBG .buttons .button.hide:hover::before {
   left: -20vw;
   top: 2700px;
   width: 8vw;
-  -webkit-animation: swimRightFar 10s linear infinite;
-          animation: swimRightFar 10s linear infinite;
+  -webkit-animation: swimRightFar 15s linear infinite;
+          animation: swimRightFar 15s linear infinite;
 }
 
 .creatures .creature.eel::after {
@@ -1060,6 +1063,139 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature.eel:hover::after {
   content: 'Pelican Eel';
+}
+
+.creatures .creature.oarfish {
+  left: -50vw;
+  top: 2200px;
+  width: 30vw;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+  -webkit-animation: swimRightFar 12s ease infinite;
+          animation: swimRightFar 12s ease infinite;
+}
+
+.creatures .creature.oarfish::after {
+  top: -80%;
+  padding: 3rem;
+}
+
+.creatures .creature.oarfish:hover::after {
+  content: 'Giant Oarfish';
+}
+
+.creatures .creature.octopus {
+  left: 120vw;
+  top: 4000px;
+  width: 3vw;
+  -webkit-animation: zigzagLeft 15s ease-out infinite;
+          animation: zigzagLeft 15s ease-out infinite;
+}
+
+.creatures .creature.octopus::after {
+  top: -300%;
+  padding: 3rem;
+}
+
+.creatures .creature.octopus:hover::after {
+  content: 'Dumbo Octopus';
+}
+
+.creatures .creature.dragonfish {
+  left: 120vw;
+  top: 2000px;
+  width: 5vw;
+  -webkit-animation: swimLeftFar 15s ease-in infinite;
+          animation: swimLeftFar 15s ease-in infinite;
+}
+
+.creatures .creature.dragonfish::after {
+  top: 150%;
+  padding: 3rem;
+}
+
+.creatures .creature.dragonfish:hover::after {
+  content: 'Black Dragonfish';
+}
+
+.creatures .creature.vampire {
+  left: 20vw;
+  top: 3000px;
+  width: 5vw;
+  -webkit-animation: swimRight 15s ease infinite;
+          animation: swimRight 15s ease infinite;
+}
+
+.creatures .creature.vampire img {
+  -webkit-animation: swimFlip 15s linear infinite;
+          animation: swimFlip 15s linear infinite;
+}
+
+.creatures .creature.vampire::after {
+  top: 120%;
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.creatures .creature.vampire:hover::after {
+  content: 'Vampire Squid';
+}
+
+.creatures .creature.fangtooth {
+  left: 110vw;
+  top: 5000px;
+  width: 5vw;
+  -webkit-animation: swimLeftFar 15s ease-out infinite;
+          animation: swimLeftFar 15s ease-out infinite;
+}
+
+.creatures .creature.fangtooth::after {
+  top: -350%;
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+.creatures .creature.fangtooth:hover::after {
+  content: 'Fangtooth';
+}
+
+.creatures .creature.swallower {
+  left: 110vw;
+  top: 2800px;
+  width: 5vw;
+  -webkit-transform: translateY(-500%);
+          transform: translateY(-500%);
+  -webkit-animation: swimLeftFar 10s ease-out infinite;
+          animation: swimLeftFar 10s ease-out infinite;
+}
+
+.creatures .creature.swallower::after {
+  top: -300%;
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.creatures .creature.swallower:hover::after {
+  content: 'Black Swallower';
+}
+
+.creatures .creature.tripod {
+  left: 80vw;
+  top: 4500px;
+  width: 7vw;
+  -webkit-animation: swimLeft 7s linear infinite;
+          animation: swimLeft 7s linear infinite;
+}
+
+.creatures .creature.tripod img {
+  -webkit-animation: swimFlip 7s linear infinite;
+          animation: swimFlip 7s linear infinite;
+}
+
+.creatures .creature.tripod::after {
+  top: -200%;
+  padding: 3rem;
+}
+
+.creatures .creature.tripod:hover::after {
+  content: 'Tripod Fish';
 }
 
 @-webkit-keyframes swimRight {
@@ -1162,29 +1298,99 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 @-webkit-keyframes swimRightFar {
   100% {
-    -webkit-transform: translateX(250vw) translateY(100%);
-            transform: translateX(250vw) translateY(100%);
+    -webkit-transform: translateX(150vw) translateY(100%);
+            transform: translateX(150vw) translateY(100%);
   }
 }
 
 @keyframes swimRightFar {
   100% {
-    -webkit-transform: translateX(250vw) translateY(100%);
-            transform: translateX(250vw) translateY(100%);
+    -webkit-transform: translateX(150vw) translateY(100%);
+            transform: translateX(150vw) translateY(100%);
   }
 }
 
 @-webkit-keyframes swimLeftFar {
   100% {
-    -webkit-transform: translateX(-250vw) translateY(-200%);
-            transform: translateX(-250vw) translateY(-200%);
+    -webkit-transform: translateX(-150vw) translateY(-200%);
+            transform: translateX(-150vw) translateY(-200%);
   }
 }
 
 @keyframes swimLeftFar {
   100% {
-    -webkit-transform: translateX(-250vw) translateY(-200%);
-            transform: translateX(-250vw) translateY(-200%);
+    -webkit-transform: translateX(-150vw) translateY(-200%);
+            transform: translateX(-150vw) translateY(-200%);
+  }
+}
+
+@-webkit-keyframes zigzagLeft {
+  12% {
+    -webkit-transform: translateY(-150%) translateX(-15vw);
+            transform: translateY(-150%) translateX(-15vw);
+  }
+  24% {
+    -webkit-transform: translateY(150%) translateX(-30vw);
+            transform: translateY(150%) translateX(-30vw);
+  }
+  36% {
+    -webkit-transform: translateY(-150%) translateX(-45vw);
+            transform: translateY(-150%) translateX(-45vw);
+  }
+  48% {
+    -webkit-transform: translateY(150%) translateX(-60vw);
+            transform: translateY(150%) translateX(-60vw);
+  }
+  60% {
+    -webkit-transform: translateY(-150%) translateX(-75vw);
+            transform: translateY(-150%) translateX(-75vw);
+  }
+  72% {
+    -webkit-transform: translateY(150%) translateX(-90vw);
+            transform: translateY(150%) translateX(-90vw);
+  }
+  84% {
+    -webkit-transform: translateY(-150%) translateX(-105vw);
+            transform: translateY(-150%) translateX(-105vw);
+  }
+  100% {
+    -webkit-transform: translateY(150%) translateX(-130vw);
+            transform: translateY(150%) translateX(-130vw);
+  }
+}
+
+@keyframes zigzagLeft {
+  12% {
+    -webkit-transform: translateY(-150%) translateX(-15vw);
+            transform: translateY(-150%) translateX(-15vw);
+  }
+  24% {
+    -webkit-transform: translateY(150%) translateX(-30vw);
+            transform: translateY(150%) translateX(-30vw);
+  }
+  36% {
+    -webkit-transform: translateY(-150%) translateX(-45vw);
+            transform: translateY(-150%) translateX(-45vw);
+  }
+  48% {
+    -webkit-transform: translateY(150%) translateX(-60vw);
+            transform: translateY(150%) translateX(-60vw);
+  }
+  60% {
+    -webkit-transform: translateY(-150%) translateX(-75vw);
+            transform: translateY(-150%) translateX(-75vw);
+  }
+  72% {
+    -webkit-transform: translateY(150%) translateX(-90vw);
+            transform: translateY(150%) translateX(-90vw);
+  }
+  84% {
+    -webkit-transform: translateY(-150%) translateX(-105vw);
+            transform: translateY(-150%) translateX(-105vw);
+  }
+  100% {
+    -webkit-transform: translateY(150%) translateX(-130vw);
+            transform: translateY(150%) translateX(-130vw);
   }
 }
 /*# sourceMappingURL=styles.css.map */
