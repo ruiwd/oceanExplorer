@@ -3,6 +3,7 @@
 .ruler {
   font-family: $fontB;
   color: rgba($color: white, $alpha: .7);
+  pointer-events: none;
 
   .standardLabel {
     height: 11000px;
@@ -68,6 +69,5 @@
 @keyframes marquee {
   100% {
     transform: translateX(-100%);
-    // left: 0;
   }
 }

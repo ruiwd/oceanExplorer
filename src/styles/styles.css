@@ -615,6 +615,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 .ruler {
   font-family: "Cinzel Decorative", cursive;
   color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
 }
 
 .ruler .standardLabel {
@@ -859,7 +860,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature.squid {
   left: 70vw;
-  top: 2500px;
+  top: 2100px;
   width: 30vw;
   -webkit-animation: swimLeft 5s ease infinite;
           animation: swimLeft 5s ease infinite;
@@ -876,6 +877,181 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature.squid:hover::after {
   content: 'Colossal Squid';
+}
+
+.creatures .creature.lionfish {
+  left: 10vw;
+  top: 50px;
+  width: 5vw;
+  -webkit-animation: swimRight 7s linear infinite;
+          animation: swimRight 7s linear infinite;
+}
+
+.creatures .creature.lionfish::after {
+  top: 120%;
+}
+
+.creatures .creature.lionfish img {
+  -webkit-animation: swimFlip 7s linear infinite;
+          animation: swimFlip 7s linear infinite;
+}
+
+.creatures .creature.lionfish:hover::after {
+  padding: 5rem;
+  content: 'Lionfish';
+}
+
+.creatures .creature.blueWhale {
+  left: -100vw;
+  top: 120px;
+  width: 60vw;
+  -webkit-animation: swimRightFar 20s linear infinite;
+          animation: swimRightFar 20s linear infinite;
+}
+
+.creatures .creature.blueWhale::after {
+  top: 100%;
+}
+
+.creatures .creature.blueWhale:hover::after {
+  content: 'Blue Whale';
+}
+
+.creatures .creature.dolphin {
+  left: 125vw;
+  top: 150px;
+  width: 20vw;
+  -webkit-animation: swimLeftFar 7s linear infinite;
+          animation: swimLeftFar 7s linear infinite;
+}
+
+.creatures .creature.dolphin::after {
+  top: 70%;
+}
+
+.creatures .creature.dolphin:hover::after {
+  content: 'Bottlenose Dolphin';
+}
+
+.creatures .creature.tuna {
+  left: 10vw;
+  top: 900px;
+  width: 20vw;
+  -webkit-animation: swimRight 5s linear infinite;
+          animation: swimRight 5s linear infinite;
+}
+
+.creatures .creature.tuna img {
+  -webkit-animation: swimFlip 5s linear infinite;
+          animation: swimFlip 5s linear infinite;
+}
+
+.creatures .creature.tuna::after {
+  top: -60%;
+}
+
+.creatures .creature.tuna:hover::after {
+  content: 'Yellowfin Tuna';
+}
+
+.creatures .creature.sunfish {
+  left: 80vw;
+  top: 50px;
+  width: 15vw;
+  -webkit-animation: swimLeft 10s linear infinite;
+          animation: swimLeft 10s linear infinite;
+}
+
+.creatures .creature.sunfish img {
+  -webkit-animation: swimFlip 10s linear infinite;
+          animation: swimFlip 10s linear infinite;
+}
+
+.creatures .creature.sunfish::after {
+  top: 100%;
+  padding: 5rem;
+}
+
+.creatures .creature.sunfish:hover::after {
+  content: 'Sunfish';
+}
+
+.creatures .creature.ray {
+  left: -30vw;
+  top: 600px;
+  width: 15vw;
+  -webkit-animation: swimRight 10s linear infinite;
+          animation: swimRight 10s linear infinite;
+}
+
+.creatures .creature.ray img {
+  -webkit-animation: swimFlip 10s linear infinite;
+          animation: swimFlip 10s linear infinite;
+}
+
+.creatures .creature.ray::after {
+  top: 80%;
+  padding: 3rem;
+}
+
+.creatures .creature.ray:hover::after {
+  content: 'Manta Ray';
+}
+
+.creatures .creature.shark {
+  left: 120vw;
+  top: 1400px;
+  width: 15vw;
+  -webkit-animation: swimLeftFar 15s linear infinite;
+          animation: swimLeftFar 15s linear infinite;
+}
+
+.creatures .creature.shark::after {
+  top: 100%;
+  padding: 3rem;
+}
+
+.creatures .creature.shark:hover::after {
+  content: 'Frilled Shark';
+}
+
+.creatures .creature.anglerfish {
+  left: 70vw;
+  top: 2300px;
+  width: 4vw;
+  -webkit-animation: swimRight 10s linear infinite;
+          animation: swimRight 10s linear infinite;
+}
+
+.creatures .creature.anglerfish img {
+  -webkit-animation: swimFlip 10s linear infinite;
+          animation: swimFlip 10s linear infinite;
+}
+
+.creatures .creature.anglerfish::after {
+  top: 100%;
+  padding: 3rem;
+}
+
+.creatures .creature.anglerfish:hover::after {
+  content: 'Humpback Anglerfish';
+}
+
+.creatures .creature.eel {
+  left: -20vw;
+  top: 2700px;
+  width: 8vw;
+  -webkit-animation: swimRightFar 10s linear infinite;
+          animation: swimRightFar 10s linear infinite;
+}
+
+.creatures .creature.eel::after {
+  top: -300%;
+  padding: 3rem;
+}
+
+.creatures .creature.eel:hover::after {
+  content: 'Pelican Eel';
 }
 
 @-webkit-keyframes swimRight {
@@ -973,6 +1149,34 @@ div.oceanBG .buttons .button.hide:hover::before {
   100% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes swimRightFar {
+  100% {
+    -webkit-transform: translateX(250vw) translateY(100%);
+            transform: translateX(250vw) translateY(100%);
+  }
+}
+
+@keyframes swimRightFar {
+  100% {
+    -webkit-transform: translateX(250vw) translateY(100%);
+            transform: translateX(250vw) translateY(100%);
+  }
+}
+
+@-webkit-keyframes swimLeftFar {
+  100% {
+    -webkit-transform: translateX(-250vw) translateY(-200%);
+            transform: translateX(-250vw) translateY(-200%);
+  }
+}
+
+@keyframes swimLeftFar {
+  100% {
+    -webkit-transform: translateX(-250vw) translateY(-200%);
+            transform: translateX(-250vw) translateY(-200%);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -61,7 +61,7 @@
 
     &.squid {
       left: 70vw;
-      top: 2500px;
+      top: 2100px;
       width: 30vw;
       animation: swimLeft 5s ease infinite;
 
@@ -79,6 +79,185 @@
         }
       }
     }
+
+    &.lionfish {
+      left: 10vw;
+      top: 50px;
+      width: 5vw;
+      animation: swimRight 7s linear infinite;
+
+      &::after {
+        top: 120%;
+      }
+  
+      & img {
+        animation: swimFlip 7s linear infinite;
+      }
+  
+      &:hover {
+        &::after {
+          padding: 5rem;
+          content: 'Lionfish';
+        }
+      }
+    }
+
+    &.blueWhale {
+      left: -100vw;
+      top: 120px;
+      width: 60vw;
+      animation: swimRightFar 20s linear infinite;
+
+      &::after {
+        top: 100%;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Blue Whale';
+        }
+      }
+    }
+
+    &.dolphin {
+      left: 125vw;
+      top: 150px;
+      width: 20vw;
+      animation: swimLeftFar 7s linear infinite;
+
+      &::after {
+        top: 70%;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Bottlenose Dolphin';
+        }
+      }
+    }
+
+    &.tuna {
+      left: 10vw;
+      top: 900px;
+      width: 20vw;
+      animation: swimRight 5s linear infinite;
+
+      & img {
+        animation: swimFlip 5s linear infinite;
+      }
+
+      &::after {
+        top: -60%;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Yellowfin Tuna';
+        }
+      }
+    }
+
+    &.sunfish {
+      left: 80vw;
+      top: 50px;
+      width: 15vw;
+      animation: swimLeft 10s linear infinite;
+
+      & img {
+        animation: swimFlip 10s linear infinite;
+      }
+
+      &::after {
+        top: 100%;
+        padding: 5rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Sunfish';
+        }
+      }
+    }
+
+    &.ray {
+      left: -30vw;
+      top: 600px;
+      width: 15vw;
+      animation: swimRight 10s linear infinite;
+
+      & img {
+        animation: swimFlip 10s linear infinite;
+      }
+
+      &::after {
+        top: 80%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Manta Ray';
+        }
+      }
+    }
+
+    &.shark {
+      left: 120vw;
+      top: 1400px;
+      width: 15vw;
+      animation: swimLeftFar 15s linear infinite;
+
+      &::after {
+        top: 100%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Frilled Shark';
+        }
+      }
+    }
+
+    &.anglerfish {
+      left: 70vw;
+      top: 2300px;
+      width: 4vw;
+      animation: swimRight 10s linear infinite;
+
+      & img {
+        animation: swimFlip 10s linear infinite;
+      }
+
+      &::after {
+        top: 100%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Humpback Anglerfish';
+        }
+      }
+    }
+
+    &.eel {
+      left: -20vw;
+      top: 2700px;
+      width: 8vw;
+      animation: swimRightFar 10s linear infinite;
+
+      &::after {
+        top: -300%;
+        padding: 3rem;
+      }
+  
+      &:hover {
+        &::after {
+          content: 'Pelican Eel';
+        }
+      }
+    }
   }
 }
 
@@ -87,17 +266,9 @@
     transform: translateX(0);
   }
 
-  // 40% {
-  //   transform: translateX(230%);
-  // }
-
   50% {
     transform: translateX(60vw);
   }
-
-  // 90% {
-  //   transform: translateX(10%);
-  // }
 
   100% {
     transform: translateX(0%);
@@ -127,19 +298,23 @@
     transform: translateX(0);
   }
 
-  // 40% {
-  //   transform: translateX(230%);
-  // }
-
   50% {
     transform: translateX(-60vw);
   }
 
-  // 90% {
-  //   transform: translateX(10%);
-  // }
-
   100% {
     transform: translateX(0%);
+  }
+}
+
+@keyframes swimRightFar {
+  100% {
+    transform: translateX(250vw) translateY(100%);
+  }
+}
+
+@keyframes swimLeftFar {
+  100% {
+    transform: translateX(-250vw) translateY(-200%);
   }
 }
