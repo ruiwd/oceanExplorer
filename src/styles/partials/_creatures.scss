@@ -1,6 +1,8 @@
 @import '_variables.scss';
 
 .creatures {
+  width: 100vw;
+  overflow-x: hidden;
   position: absolute;
   height: 11000px;
 

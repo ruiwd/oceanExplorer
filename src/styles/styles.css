@@ -250,6 +250,10 @@ a {
   display: inline-block;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -794,6 +798,8 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures {
+  width: 100vw;
+  overflow-x: hidden;
   position: absolute;
   height: 11000px;
 }
