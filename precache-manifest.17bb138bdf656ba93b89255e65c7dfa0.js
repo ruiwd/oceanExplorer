@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aff346124dae5de896e9a50703ab2447",
+    "revision": "1249ae6565f8027bbf72669a40f80dc4",
     "url": "/oceanExplorer/index.html"
   },
   {
-    "revision": "0ffb811baf8b6b8bd67c",
-    "url": "/oceanExplorer/static/css/main.818a319d.chunk.css"
+    "revision": "327aa314d41541aef930",
+    "url": "/oceanExplorer/static/css/main.8f8b82dd.chunk.css"
   },
   {
     "revision": "44e5731ae919877a1f98",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oceanExplorer/static/js/2.2a338bac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0ffb811baf8b6b8bd67c",
+    "revision": "327aa314d41541aef930",
     "url": "/oceanExplorer/static/js/main.63a56f29.chunk.js"
   },
   {
