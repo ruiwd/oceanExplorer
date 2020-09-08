@@ -21,11 +21,11 @@ class Ruler extends Component {
           </div>
           <div className="extraLabel">
             <p className="twoHundred">200 m</p>
-            <div className="zoneOne zone">Epipelagic Zone (The Sunlight Zone)</div>
-            <div className="zoneTwo zone">Mesopelagic Zone (The Twilight Zone)</div>
-            <div className="zoneThree zone">Bathypelagic Zone (The Midnight Zone)</div>
-            <div className="zoneFour zone">Abyssopelagic Zone (The Abyss)</div>
-            <div className="zoneFive zone">Hadalpelagic Zone (The Trenches)</div>
+            <h2 className="zoneOne zone">Epipelagic Zone (The Sunlight Zone)</h2>
+            <h2 className="zoneTwo zone">Mesopelagic Zone (The Twilight Zone)</h2>
+            <h2 className="zoneThree zone">Bathypelagic Zone (The Midnight Zone)</h2>
+            <h2 className="zoneFour zone">Abyssopelagic Zone (The Abyss)</h2>
+            <h2 className="zoneFive zone">Hadalpelagic Zone (The Trenches)</h2>
           </div>
         </div>
       </Fragment>

@@ -250,12 +250,9 @@ a {
   display: inline-block;
 }
 
-html {
+html, body {
   overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  width: 100vw;
 }
 
 .beach {
@@ -544,8 +541,6 @@ body {
 }
 
 div.oceanBG {
-  max-width: 100vw;
-  overflow-x: hidden;
   width: 100%;
   height: 11400px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00FFFF), color-stop(10%, #00CED1), color-stop(40%, #191970), color-stop(60%, #000));
@@ -619,8 +614,6 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .ruler {
-  max-width: 100vw;
-  overflow-x: hidden;
   font-family: "Cinzel Decorative", cursive;
   color: rgba(255, 255, 255, 0.7);
   pointer-events: none;
@@ -802,7 +795,6 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures {
-  max-width: 100vw;
   position: absolute;
   height: 11000px;
 }
