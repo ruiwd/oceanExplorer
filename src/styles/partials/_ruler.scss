@@ -1,6 +1,8 @@
 @import '_variables.scss';
 
 .ruler {
+  max-width: 100vw;
+  overflow-x: hidden;
   font-family: $fontB;
   color: rgba($color: white, $alpha: .7);
   pointer-events: none;
