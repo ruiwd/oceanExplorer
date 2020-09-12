@@ -8,16 +8,23 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -33,7 +40,7 @@ hr {
 }
 
 pre {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -49,16 +56,20 @@ abbr[title] {
           text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
-  font-family: monospace,monospace;
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -75,7 +86,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -83,14 +95,15 @@ sub, sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -107,36 +120,51 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
@@ -158,22 +186,25 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type="checkbox"],
+[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -182,7 +213,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -207,7 +239,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -235,7 +269,14 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
 }
 
@@ -250,7 +291,8 @@ a {
   display: inline-block;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100vw;
 }
@@ -541,8 +583,10 @@ html, body {
 }
 
 div.oceanBG {
-  width: 100%;
-  height: 11400px;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: calc(11000px + 50rem);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00ffff), color-stop(10%, #00ced1), color-stop(40%, #191970), color-stop(60%, #000));
   background-image: linear-gradient(#00ffff 2%, #00ced1 10%, #191970 40%, #000 60%);
   display: none;
@@ -553,9 +597,9 @@ div.oceanBG .floor {
   background-size: cover;
   background-position-y: 60%;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 50rem;
   position: absolute;
-  top: 10900px;
+  top: 11000px;
   width: 100%;
   overflow: hidden;
   z-index: 10;
@@ -641,7 +685,7 @@ div.oceanBG .buttons .button.hide:hover::before {
   border-top: 2px solid rgba(255, 255, 255, 0.7);
   display: block;
   padding-top: 1rem;
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 
 .extraLabel p.twoHundred {
@@ -652,6 +696,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .extraLabel .zone {
+  margin: 0;
   text-align: left;
   position: absolute;
   right: 0;
@@ -669,22 +714,22 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .extraLabel .zone.zoneTwo {
   top: 220px;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .extraLabel .zone.zoneThree {
   top: 1020px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .extraLabel .zone.zoneFour {
   top: 4020px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .extraLabel .zone.zoneFive {
   top: 6020px;
-  opacity: .45;
+  opacity: 0.45;
 }
 
 @-webkit-keyframes marquee {
@@ -727,7 +772,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .bubbles span:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -797,7 +842,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures {
   position: absolute;
-  height: 11000px;
+  height: calc(11000px + 50rem);
 }
 
 .creatures .creature {
@@ -1237,9 +1282,13 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.cthulhu {
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   z-index: 0;
   left: 10vw;
-  top: 10700px;
+  top: auto;
+  bottom: 20rem;
   width: 80vw;
   -webkit-animation: cthulhu 25s linear infinite;
           animation: cthulhu 25s linear infinite;
@@ -1249,10 +1298,18 @@ div.oceanBG .buttons .button.hide:hover::before {
           filter: brightness(0.6);
 }
 
+.creatures .creature.cthulhu img {
+  overflow: hidden;
+}
+
 .creatures .creature.cthulhuTwo {
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   z-index: 0;
   left: 10vw;
-  top: 10700px;
+  top: auto;
+  bottom: 20rem;
   width: 80vw;
   -webkit-animation: cthulhuTwo 15s linear infinite;
           animation: cthulhuTwo 15s linear infinite;
@@ -1260,6 +1317,10 @@ div.oceanBG .buttons .button.hide:hover::before {
   pointer-events: none;
   -webkit-filter: drop-shadow(0px 0px 1rem red) drop-shadow(0px 0px 5rem red) brightness(2);
           filter: drop-shadow(0px 0px 1rem red) drop-shadow(0px 0px 5rem red) brightness(2);
+}
+
+.creatures .creature.cthulhuTwo img {
+  overflow: hidden;
 }
 
 @-webkit-keyframes swimRight {

@@ -1,8 +1,8 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 .ruler {
   font-family: $fontB;
-  color: rgba($color: white, $alpha: .7);
+  color: rgba($color: white, $alpha: 0.7);
   pointer-events: none;
 
   .standardLabel {
@@ -16,10 +16,10 @@
 
   p {
     text-align: right;
-    border-top: 2px solid rgba($color: white, $alpha: .7);
+    border-top: 2px solid rgba($color: white, $alpha: 0.7);
     display: block;
     padding-top: 1rem;
-    padding-right: 1rem;
+    padding-right: 3rem;
   }
 }
 
@@ -32,6 +32,7 @@
   }
 
   .zone {
+    margin: 0;
     text-align: left;
     position: absolute;
     right: 0;
@@ -43,25 +44,25 @@
     &.zoneOne {
       top: 20px;
     }
-  
+
     &.zoneTwo {
       top: 220px;
-      opacity: .95;
+      opacity: 0.95;
     }
 
     &.zoneThree {
       top: 1020px;
-      opacity: .8;
+      opacity: 0.8;
     }
 
-    &.zoneFour { 
+    &.zoneFour {
       top: 4020px;
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &.zoneFive {
       top: 6020px;
-      opacity: .45;
+      opacity: 0.45;
     }
   }
 }
