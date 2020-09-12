@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4701d1f2b64f865e96b70e0dbd4d3ed4",
+    "revision": "89cd554229b0526ac5f2b6482c46add0",
     "url": "/oceanExplorer/index.html"
   },
   {
-    "revision": "38303166a9f56c7da2b5",
-    "url": "/oceanExplorer/static/css/main.b5dbf0a3.chunk.css"
+    "revision": "ce59cd776188f345ddd1",
+    "url": "/oceanExplorer/static/css/main.3c276eb3.chunk.css"
   },
   {
-    "revision": "fbcf72bf4da550ba265c",
-    "url": "/oceanExplorer/static/js/2.a1decd28.chunk.js"
+    "revision": "51db2ce0399659452a1a",
+    "url": "/oceanExplorer/static/js/2.915934ed.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/oceanExplorer/static/js/2.a1decd28.chunk.js.LICENSE.txt"
+    "url": "/oceanExplorer/static/js/2.915934ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38303166a9f56c7da2b5",
-    "url": "/oceanExplorer/static/js/main.f28a1b07.chunk.js"
+    "revision": "ce59cd776188f345ddd1",
+    "url": "/oceanExplorer/static/js/main.e28e44cb.chunk.js"
   },
   {
     "revision": "b075c284f69cfcd55a54",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "688a4e6a2f44e7ac21d5f25849fbe744",
     "url": "/oceanExplorer/static/media/bottle.688a4e6a.png"
+  },
+  {
+    "revision": "4f5473be91866832d7a9032c2a1825f8",
+    "url": "/oceanExplorer/static/media/cthulhu.4f5473be.png"
+  },
+  {
+    "revision": "fdd5ea2220e64086c612ed07dd3e79e0",
+    "url": "/oceanExplorer/static/media/cthulhu2.fdd5ea22.png"
   },
   {
     "revision": "11ae42b58aedca321d74203bf3e80dfe",
@@ -106,6 +114,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f03aeb3a44242fb3c95c4cfae259deff",
     "url": "/oceanExplorer/static/media/swallower.f03aeb3a.png"
+  },
+  {
+    "revision": "cbc883e3538ada327a7001acdbe936e0",
+    "url": "/oceanExplorer/static/media/tentacle1.cbc883e3.png"
+  },
+  {
+    "revision": "d16f88c1e2b621188fa2a75507941ce1",
+    "url": "/oceanExplorer/static/media/tentacle2.d16f88c1.png"
   },
   {
     "revision": "0fe2048da3116fa644703512e9cad0a9",
