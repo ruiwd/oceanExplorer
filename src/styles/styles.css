@@ -543,8 +543,8 @@ html, body {
 div.oceanBG {
   width: 100%;
   height: 11400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00FFFF), color-stop(10%, #00CED1), color-stop(40%, #191970), color-stop(60%, #000));
-  background-image: linear-gradient(#00FFFF 2%, #00CED1 10%, #191970 40%, #000 60%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #00ffff), color-stop(10%, #00ced1), color-stop(40%, #191970), color-stop(60%, #000));
+  background-image: linear-gradient(#00ffff 2%, #00ced1 10%, #191970 40%, #000 60%);
   display: none;
 }
 
@@ -558,6 +558,7 @@ div.oceanBG .floor {
   top: 10900px;
   width: 100%;
   overflow: hidden;
+  z-index: 10;
 }
 
 div.oceanBG .buttons {
@@ -574,16 +575,16 @@ div.oceanBG .buttons .button {
   font-size: 2.5rem;
   text-align: center;
   border: black 3px solid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 div.oceanBG .buttons .button::before {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  content: '';
+  content: "";
   margin-top: 1.3rem;
   position: absolute;
   z-index: 60;
@@ -816,7 +817,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature::after {
   display: block;
-  content: '';
+  content: "";
   font-family: "Shadows Into Light", cursive;
   position: absolute;
   left: 50%;
@@ -856,7 +857,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.spermWhale:hover::after {
-  content: 'Sperm Whale';
+  content: "Sperm Whale";
 }
 
 .creatures .creature.squid {
@@ -877,7 +878,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.squid:hover::after {
-  content: 'Colossal Squid';
+  content: "Colossal Squid";
 }
 
 .creatures .creature.lionfish {
@@ -899,7 +900,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 
 .creatures .creature.lionfish:hover::after {
   padding: 5rem;
-  content: 'Lionfish';
+  content: "Lionfish";
 }
 
 .creatures .creature.blueWhale {
@@ -915,7 +916,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.blueWhale:hover::after {
-  content: 'Blue Whale';
+  content: "Blue Whale";
 }
 
 .creatures .creature.dolphin {
@@ -933,7 +934,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.dolphin:hover::after {
-  content: 'Bottlenose Dolphin';
+  content: "Bottlenose Dolphin";
 }
 
 .creatures .creature.tuna {
@@ -954,7 +955,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.tuna:hover::after {
-  content: 'Yellowfin Tuna';
+  content: "Yellowfin Tuna";
 }
 
 .creatures .creature.sunfish {
@@ -976,7 +977,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.sunfish:hover::after {
-  content: 'Sunfish';
+  content: "Sunfish";
 }
 
 .creatures .creature.ray {
@@ -998,7 +999,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.ray:hover::after {
-  content: 'Manta Ray';
+  content: "Manta Ray";
 }
 
 .creatures .creature.shark {
@@ -1015,7 +1016,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.shark:hover::after {
-  content: 'Frilled Shark';
+  content: "Frilled Shark";
 }
 
 .creatures .creature.anglerfish {
@@ -1037,7 +1038,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.anglerfish:hover::after {
-  content: 'Humpback Anglerfish';
+  content: "Humpback Anglerfish";
 }
 
 .creatures .creature.eel {
@@ -1054,7 +1055,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.eel:hover::after {
-  content: 'Pelican Eel';
+  content: "Pelican Eel";
 }
 
 .creatures .creature.oarfish {
@@ -1073,7 +1074,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.oarfish:hover::after {
-  content: 'Giant Oarfish';
+  content: "Giant Oarfish";
 }
 
 .creatures .creature.octopus {
@@ -1090,7 +1091,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.octopus:hover::after {
-  content: 'Dumbo Octopus';
+  content: "Dumbo Octopus";
 }
 
 .creatures .creature.dragonfish {
@@ -1107,7 +1108,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.dragonfish:hover::after {
-  content: 'Black Dragonfish';
+  content: "Black Dragonfish";
 }
 
 .creatures .creature.vampire {
@@ -1129,7 +1130,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.vampire:hover::after {
-  content: 'Vampire Squid';
+  content: "Vampire Squid";
 }
 
 .creatures .creature.fangtooth {
@@ -1146,7 +1147,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.fangtooth:hover::after {
-  content: 'Fangtooth';
+  content: "Fangtooth";
 }
 
 .creatures .creature.swallower {
@@ -1165,7 +1166,7 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.swallower:hover::after {
-  content: 'Black Swallower';
+  content: "Black Swallower";
 }
 
 .creatures .creature.tripod {
@@ -1187,7 +1188,78 @@ div.oceanBG .buttons .button.hide:hover::before {
 }
 
 .creatures .creature.tripod:hover::after {
-  content: 'Tripod Fish';
+  content: "Tripod Fish";
+}
+
+.creatures .creature.tentacleOne {
+  left: -70vw;
+  top: 8000px;
+  width: 40vw;
+  -webkit-animation: swimRight 15s linear infinite;
+          animation: swimRight 15s linear infinite;
+}
+
+.creatures .creature.tentacleOne img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.creatures .creature.tentacleOne::after {
+  top: -20%;
+  left: 70%;
+  padding: 5rem;
+}
+
+.creatures .creature.tentacleOne:hover::after {
+  content: "??????";
+}
+
+.creatures .creature.tentacleTwo {
+  left: 130vw;
+  top: 8300px;
+  width: 35vw;
+  -webkit-animation: swimLeft 12s linear infinite;
+          animation: swimLeft 12s linear infinite;
+}
+
+.creatures .creature.tentacleTwo img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.creatures .creature.tentacleTwo::after {
+  top: 105%;
+  padding: 5rem;
+}
+
+.creatures .creature.tentacleTwo:hover::after {
+  content: "??????";
+}
+
+.creatures .creature.cthulhu {
+  z-index: 0;
+  left: 10vw;
+  top: 10700px;
+  width: 80vw;
+  -webkit-animation: cthulhu 25s linear infinite;
+          animation: cthulhu 25s linear infinite;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.creatures .creature.cthulhuTwo {
+  z-index: 0;
+  left: 10vw;
+  top: 10700px;
+  width: 80vw;
+  -webkit-animation: cthulhuTwo 15s linear infinite;
+          animation: cthulhuTwo 15s linear infinite;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-filter: drop-shadow(0px 0px 1rem red) drop-shadow(0px 0px 5rem red) brightness(2);
+          filter: drop-shadow(0px 0px 1rem red) drop-shadow(0px 0px 5rem red) brightness(2);
 }
 
 @-webkit-keyframes swimRight {
@@ -1383,6 +1455,96 @@ div.oceanBG .buttons .button.hide:hover::before {
   100% {
     -webkit-transform: translateY(150%) translateX(-130vw);
             transform: translateY(150%) translateX(-130vw);
+  }
+}
+
+@-webkit-keyframes cthulhu {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
+@keyframes cthulhu {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cthulhuTwo {
+  0% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes cthulhuTwo {
+  0% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 /*# sourceMappingURL=styles.css.map */
