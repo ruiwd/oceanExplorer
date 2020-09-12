@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/oceanExplorer/static/css/main.3c276eb3.chunk.css",
-    "main.js": "/oceanExplorer/static/js/main.e28e44cb.chunk.js",
-    "main.js.map": "/oceanExplorer/static/js/main.e28e44cb.chunk.js.map",
+    "main.css": "/oceanExplorer/static/css/main.1c16e25c.chunk.css",
+    "main.js": "/oceanExplorer/static/js/main.c58fac07.chunk.js",
+    "main.js.map": "/oceanExplorer/static/js/main.c58fac07.chunk.js.map",
     "runtime-main.js": "/oceanExplorer/static/js/runtime-main.2dccc27e.js",
     "runtime-main.js.map": "/oceanExplorer/static/js/runtime-main.2dccc27e.js.map",
     "static/js/2.915934ed.chunk.js": "/oceanExplorer/static/js/2.915934ed.chunk.js",
     "static/js/2.915934ed.chunk.js.map": "/oceanExplorer/static/js/2.915934ed.chunk.js.map",
     "index.html": "/oceanExplorer/index.html",
-    "precache-manifest.c075087d19524213780fb2c904e5af23.js": "/oceanExplorer/precache-manifest.c075087d19524213780fb2c904e5af23.js",
+    "precache-manifest.e292ba1db136c342cc963dd3b72c43af.js": "/oceanExplorer/precache-manifest.e292ba1db136c342cc963dd3b72c43af.js",
     "service-worker.js": "/oceanExplorer/service-worker.js",
-    "static/css/main.3c276eb3.chunk.css.map": "/oceanExplorer/static/css/main.3c276eb3.chunk.css.map",
+    "static/css/main.1c16e25c.chunk.css.map": "/oceanExplorer/static/css/main.1c16e25c.chunk.css.map",
     "static/js/2.915934ed.chunk.js.LICENSE.txt": "/oceanExplorer/static/js/2.915934ed.chunk.js.LICENSE.txt",
     "static/media/anglerfish.png": "/oceanExplorer/static/media/anglerfish.98b7b2f3.png",
     "static/media/styles.css": "/oceanExplorer/static/media/paper2.0793ad9e.png",
     "static/media/blueWhale.png": "/oceanExplorer/static/media/blueWhale.c4586919.png",
     "static/media/bottle.png": "/oceanExplorer/static/media/bottle.688a4e6a.png",
-    "static/media/cthulhu.png": "/oceanExplorer/static/media/cthulhu.4f5473be.png",
-    "static/media/cthulhu2.png": "/oceanExplorer/static/media/cthulhu2.fdd5ea22.png",
+    "static/media/cthulhu.png": "/oceanExplorer/static/media/cthulhu.5af65256.png",
+    "static/media/cthulhu2.png": "/oceanExplorer/static/media/cthulhu2.2eb19893.png",
     "static/media/dolphin.png": "/oceanExplorer/static/media/dolphin.7ee06706.png",
     "static/media/dragonfish.png": "/oceanExplorer/static/media/dragonfish.62c4c1ce.png",
     "static/media/eel.png": "/oceanExplorer/static/media/eel.913dfb98.png",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.2dccc27e.js",
     "static/js/2.915934ed.chunk.js",
-    "static/css/main.3c276eb3.chunk.css",
-    "static/js/main.e28e44cb.chunk.js"
+    "static/css/main.1c16e25c.chunk.css",
+    "static/js/main.c58fac07.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89cd554229b0526ac5f2b6482c46add0",
+    "revision": "d04077f6de93e7acc10bdc3f30fb7814",
     "url": "/oceanExplorer/index.html"
   },
   {
-    "revision": "ce59cd776188f345ddd1",
-    "url": "/oceanExplorer/static/css/main.3c276eb3.chunk.css"
+    "revision": "eefd949cf9e4bb5e6661",
+    "url": "/oceanExplorer/static/css/main.1c16e25c.chunk.css"
   },
   {
     "revision": "51db2ce0399659452a1a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oceanExplorer/static/js/2.915934ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce59cd776188f345ddd1",
-    "url": "/oceanExplorer/static/js/main.e28e44cb.chunk.js"
+    "revision": "eefd949cf9e4bb5e6661",
+    "url": "/oceanExplorer/static/js/main.c58fac07.chunk.js"
   },
   {
     "revision": "b075c284f69cfcd55a54",
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oceanExplorer/static/media/bottle.688a4e6a.png"
   },
   {
-    "revision": "4f5473be91866832d7a9032c2a1825f8",
-    "url": "/oceanExplorer/static/media/cthulhu.4f5473be.png"
+    "revision": "5af65256870a014e3e44caea82c0b794",
+    "url": "/oceanExplorer/static/media/cthulhu.5af65256.png"
   },
   {
-    "revision": "fdd5ea2220e64086c612ed07dd3e79e0",
-    "url": "/oceanExplorer/static/media/cthulhu2.fdd5ea22.png"
+    "revision": "2eb198930de6e60201d267bf4de5df06",
+    "url": "/oceanExplorer/static/media/cthulhu2.2eb19893.png"
   },
   {
     "revision": "11ae42b58aedca321d74203bf3e80dfe",
