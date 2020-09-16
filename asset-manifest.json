@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oceanExplorer/static/css/main.1c16e25c.chunk.css",
-    "main.js": "/oceanExplorer/static/js/main.c58fac07.chunk.js",
-    "main.js.map": "/oceanExplorer/static/js/main.c58fac07.chunk.js.map",
+    "main.css": "/oceanExplorer/static/css/main.e004acae.chunk.css",
+    "main.js": "/oceanExplorer/static/js/main.9db754e6.chunk.js",
+    "main.js.map": "/oceanExplorer/static/js/main.9db754e6.chunk.js.map",
     "runtime-main.js": "/oceanExplorer/static/js/runtime-main.2dccc27e.js",
     "runtime-main.js.map": "/oceanExplorer/static/js/runtime-main.2dccc27e.js.map",
     "static/js/2.915934ed.chunk.js": "/oceanExplorer/static/js/2.915934ed.chunk.js",
     "static/js/2.915934ed.chunk.js.map": "/oceanExplorer/static/js/2.915934ed.chunk.js.map",
     "index.html": "/oceanExplorer/index.html",
-    "precache-manifest.e292ba1db136c342cc963dd3b72c43af.js": "/oceanExplorer/precache-manifest.e292ba1db136c342cc963dd3b72c43af.js",
+    "precache-manifest.84f29f7ab0d27d07a85d0178c324a56e.js": "/oceanExplorer/precache-manifest.84f29f7ab0d27d07a85d0178c324a56e.js",
     "service-worker.js": "/oceanExplorer/service-worker.js",
-    "static/css/main.1c16e25c.chunk.css.map": "/oceanExplorer/static/css/main.1c16e25c.chunk.css.map",
+    "static/css/main.e004acae.chunk.css.map": "/oceanExplorer/static/css/main.e004acae.chunk.css.map",
     "static/js/2.915934ed.chunk.js.LICENSE.txt": "/oceanExplorer/static/js/2.915934ed.chunk.js.LICENSE.txt",
     "static/media/anglerfish.png": "/oceanExplorer/static/media/anglerfish.98b7b2f3.png",
     "static/media/styles.css": "/oceanExplorer/static/media/paper2.0793ad9e.png",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.2dccc27e.js",
     "static/js/2.915934ed.chunk.js",
-    "static/css/main.1c16e25c.chunk.css",
-    "static/js/main.c58fac07.chunk.js"
+    "static/css/main.e004acae.chunk.css",
+    "static/js/main.9db754e6.chunk.js"
   ]
 }
